@@ -1,11 +1,55 @@
 /* FILENAME: const-var.css */
 /* home of constant variables used in styling the website. */
 :root {
-    --COLOR-MAIN-BACKGROUND: black;
-    --COLOR-PRIMARY: black;     /* main color of the website */
-    --COLOR-SECONDARY: black;   /* secondary main color */
-    --COLOR-ACCENTS: black;     /* for links and hover color */
 
-    --COLOR-TEXT-HEADERS: black;
-    --COLOR-TEXT-BODY: black;
+    /*+--- COLORS ---------------------------------------------+*/
+    --COLOR-MAIN-BACKGROUND: black;
+    --COLOR-PRIMARY:    black;     /* main color of the website */
+    --COLOR-SECONDARY:  black;   /* secondary main color */
+    --COLOR-ACCENTS:    black;     /* for links and hover color */
+
+
+    /* texts */
+    --COLOR-TEXT-HEADERS:   black;
+    --COLOR-TEXT-BODY:      black;
+    --COLOR-TEXT-MUTED:     black; /* captions, placeholders, secondary info */
+    --COLOR-TEXT-INVERSE:   black; /* text on dark/colored background */
+
+
+    /* semantics */
+    --COLOR-SUCCESS: black;
+    --COLOR-WARNING: black;
+    --COLOR-ERROR:  black;
+    --COLOR-INFO:   black;
+
+
+    /* border */
+    --COLOR-BORDER: black;
+    --COLOR-BORDER-FOCUS: black;
+
+
+
+    /*+--- TYPOGRAPHY ---------------------------------------------+*/
+    /* type scale based on Major Third scale (*1.25) */
+    --FONT-SIZE-XS:   0.64rem;  /* 10.24px */
+    --FONT-SIZE-BASE: 1rem;     /* 16px    — browser default, body text */
+    --FONT-SIZE-MD:   1.25rem;  /* 20px    */
+    --FONT-SIZE-LG:   1.563rem; /* 25px    */
+    --FONT-SIZE-XL:   1.953rem; /* 31px    */
+    --FONT-SIZE-3XL:  3.052rem; /* 49px    — hero headings */
+
+
+    /* font families */
+    /* not yet found */
+
+
+    /* Font weights */
+    --FONT-WEIGHT-REGULAR: 400;
+    --FONT-WEIGHT-MEDIUM:  500;
+    --FONT-WEIGHT-BOLD:    700;
+
+    /* Line heights */
+    --LINE-HEIGHT-TIGHT:  1.2;  /* headings */
+    --LINE-HEIGHT-NORMAL: 1.5;  /* body text — most readable */
+    --LINE-HEIGHT-LOOSE:  1.8;  /* long-form reading */
 }
