@@ -1,0 +1,11 @@
+/* FILENAME: const-var.css */
+/* home of constant variables used in styling the website. */
+:root {
+    --COLOR-MAIN-BACKGROUND: black;
+    --COLOR-PRIMARY: black;     /* main color of the website */
+    --COLOR-SECONDARY: black;   /* secondary main color */
+    --COLOR-ACCENTS: black;     /* for links and hover color */
+
+    --COLOR-TEXT-HEADERS: black;
+    --COLOR-TEXT-BODY: black;
+}

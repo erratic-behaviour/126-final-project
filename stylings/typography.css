@@ -1,0 +1,11 @@
+/* FILENAME: typography */
+
+@import "./const-vars.css";
+
+h1, h2, h3 {
+    color: var(--COLOR-TEXT-HEADERS);
+}
+
+p {
+    color: var(--COLOR-TEXT-BODY);
+}
