@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Profile</title>
+</head>
+<body>
+<div class="container" id="appRoot">
+  <div class="loading-placeholder">Loading profile data...</div>
+</div>
+
+<script>
+  (function() {
+    // Database abstraction - replace with your actual DB call
+    function fetchProfileFromDB() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            profile: {
+              fullName: "Profile Name",
+              imageUrl: "https://via.placeholder.com/110",
+              titles: ["Title 1", "Title 2"],
+              joinInfo: "Member info",
+              detailsList: [
+                { label: "Detail label 1", value: "Detail value 1" },
+                { label: "Detail label 2", value: "Detail value 2" }
+              ],
+              contacts: [
+                { type: "Contact type 1", value: "Contact value 1" },
+                { type: "Contact type 2", value: "Contact value 2" }
+              ]
+            },
+            reviews: [
+              { establishment: "Establishment name", ratingStars: "★★★★☆", comment: "Review comment here." }
+            ]
+          });
+        }, 100);
+      });
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    function renderUI(data) {
+      const { profile, reviews } = data;
+
+      const profileHtml = `
+        <section class="card">
+          <div class="profile-header">
+            <img class="profile-image" src="${escapeHtml(profile.imageUrl)}" alt="Profile">
+            <div class="profile-info">
+              <h1>${escapeHtml(profile.fullName)}</h1>
+              <div class="badge-line">${(profile.titles || []).map(t => `<span class="role-tag">${escapeHtml(t)}</span>`).join('')}</div>
+              <div class="member-note">${escapeHtml(profile.joinInfo)}</div>
+            </div>
+          </div>
+          <div class="profile-details">${(profile.detailsList || []).map(d => `<div class="detail-row"><span class="detail-label">${escapeHtml(d.label)}</span><span class="detail-value">${escapeHtml(d.value)}</span></div>`).join('')}</div>
+          <div class="contact-list">${(profile.contacts || []).map(c => `<div class="contact-item"><span>${escapeHtml(c.type)}</span><span>${escapeHtml(c.value)}</span></div>`).join('')}</div>
+        </section>
+      `;
+
+      const reviewsHtml = reviews && reviews.length ? `
+        <section class="card">
+          <div class="reviews-header"><h2>Reviews</h2></div>
+          <div class="carousel" id="carousel">${reviews.map((r, i) => `<article class="review-card ${i === 0 ? 'active' : ''}"><div class="review-establishment">${escapeHtml(r.establishment)}</div><div class="rating">${escapeHtml(r.ratingStars)}</div><p class="quote">${escapeHtml(r.comment)}</p></article>`).join('')}</div>
+          <div class="carousel-controls"><button id="prevBtn">Previous</button><button id="nextBtn">Next</button></div>
+        </section>
+      ` : '<section class="card"><h2>Reviews</h2><p>No reviews available.</p></section>';
+
+      document.getElementById('appRoot').innerHTML = profileHtml + reviewsHtml;
+
+      if (reviews && reviews.length > 1) {
+        let idx = 0;
+        const cards = document.querySelectorAll('.review-card');
+        const prev = document.getElementById('prevBtn');
+        const next = document.getElementById('nextBtn');
+        const show = (i) => cards.forEach((c, n) => c.classList.toggle('active', n === i));
+        prev.onclick = () => { idx = (idx - 1 + cards.length) % cards.length; show(idx); };
+        next.onclick = () => { idx = (idx + 1) % cards.length; show(idx); };
+      }
+    }
+
+    fetchProfileFromDB().then(renderUI).catch(() => {
+      document.getElementById('appRoot').innerHTML = '<div class="card" style="text-align:center">Failed to load data.</div>';
+    });
+  })();
+</script>
+</body>
+</html>
