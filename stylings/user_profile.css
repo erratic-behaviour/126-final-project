@@ -1,0 +1,98 @@
+/* Import your constants file at the top */
+@import "const-vars.css";
+
+body {
+    font-family: sans-serif;
+    background-color: var(--COLOR-MAIN-BACKGROUND);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* --- Left Profile Card --- */
+.profile-card {
+    background-color: var(--COLOR-PRIMARY);
+    width: 280px;
+    padding: 40px 30px;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.05);
+}
+
+.image-container {
+    width: 140px;
+    height: 140px;
+    background-color: var(--COLOR-SECONDARY);
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-name {
+    text-align: center;
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    text-transform: uppercase;
+    font-size: var(--FONT-SIZE-BASE);
+    color: var(--COLOR-TEXT-HEADERS);
+    margin-bottom: 30px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: var(--FONT-SIZE-BASE);
+    color: var(--COLOR-TEXT-BODY);
+}
+
+/* --- Right Reviews Section --- */
+.reviews-banner {
+    background-color: var(--COLOR-ACCENTS);
+    color: var(--COLOR-TEXT-HEADERS);
+    padding: 18px 35px;
+    font-size: var(--FONT-SIZE-LG);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.review-card {
+    background: var(--COLOR-TEXT-INVERSE);
+    padding: 15px;
+    width: 210px;
+    min-height: 220px;
+}
+
+.review-header {
+    background: var(--COLOR-BORDER);
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    margin-bottom: 12px;
+}
+
+.review-text {
+    font-size: var(--FONT-SIZE-XS);
+    line-height: var(--LINE-HEIGHT-NORMAL);
+    color: var(--COLOR-TEXT-MUTED);
+}
+
+.next-btn {
+    background: var(--COLOR-TEXT-INVERSE);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

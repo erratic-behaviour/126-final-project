@@ -3,17 +3,17 @@
 :root {
 
     /*+--- COLORS ---------------------------------------------+*/
-    --COLOR-MAIN-BACKGROUND: black;
-    --COLOR-PRIMARY:    black;     /* main color of the website */
-    --COLOR-SECONDARY:  black;   /* secondary main color */
-    --COLOR-ACCENTS:    black;     /* for links and hover color */
+    --COLOR-MAIN-BACKGROUND: #d9d9d9
+    --COLOR-PRIMARY:    #ece8e5;     /* main color of the website */
+    --COLOR-SECONDARY:  #00a099;   /* secondary main color */
+    --COLOR-ACCENTS:    #d9534f;     /* for links and hover color */
 
 
     /* texts */
-    --COLOR-TEXT-HEADERS:   black;
-    --COLOR-TEXT-BODY:      black;
-    --COLOR-TEXT-MUTED:     black; /* captions, placeholders, secondary info */
-    --COLOR-TEXT-INVERSE:   black; /* text on dark/colored background */
+    --COLOR-TEXT-HEADERS:   #1a1a1a;
+    --COLOR-TEXT-BODY:      #333333;
+    --COLOR-TEXT-MUTED:     #666666; /* captions, placeholders, secondary info */
+    --COLOR-TEXT-INVERSE:   #ffffff; /* text on dark/colored background */
 
 
     /* semantics */
@@ -24,7 +24,7 @@
 
 
     /* border */
-    --COLOR-BORDER: black;
+    --COLOR-BORDER: #e0e0e0;
     --COLOR-BORDER-FOCUS: black;
 
 
@@ -52,4 +52,9 @@
     --LINE-HEIGHT-TIGHT:  1.2;  /* headings */
     --LINE-HEIGHT-NORMAL: 1.5;  /* body text — most readable */
     --LINE-HEIGHT-LOOSE:  1.8;  /* long-form reading */
+
+
+    /*Box colorings*/
+    --BUTTON-COLOR: #b2de77;
+    --POP-UP-SLIDER: #8cad5f;
 }
