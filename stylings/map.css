@@ -1,0 +1,39 @@
+/* FILENAME: map */
+
+@import "./const-vars.css";
+
+body {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+}
+
+.my-div-icon{
+    width: 1em;
+    height: 1em;
+    display:flex;
+    align-items: center;
+}
+
+.my-div-image{
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+}
+
+.my-div-span{
+    color: var(--COLOR-TEXT-HEADERS);
+    width: 2.5em;
+    white-space: nowrap;
+    font-weight: var(--FONT-WEIGHT-BOLD);
+}
+
