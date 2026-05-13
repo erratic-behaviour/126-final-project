@@ -9,4 +9,8 @@ import { default as loadMap } from "./components/map.js";
 
 // FUNCTION CALLS
 loadNavbar();
-loadMap(); // i might move it to another file as this wastes resources
+
+// condition to ensure loadMap function only loads inside map.html
+if ( window.location.pathname.includes("map.html") ) {
+    import("./components/map.js").then(module => module.default());
+}
