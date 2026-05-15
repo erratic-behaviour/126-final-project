@@ -1,5 +1,8 @@
 /* FILENAME: const-var.css */
 /* home of constant variables used in styling the website. */
+
+@import url('https://googleapis.com');
+
 :root {
 
     /*+--- COLORS ---------------------------------------------+*/
@@ -10,6 +13,8 @@
 
 
     /* texts */
+    --FONT-BODY: 'Inter', sans-serif;
+
     --COLOR-TEXT-HEADERS:   #1a1a1a;
     --COLOR-TEXT-BODY:      #333333;
     --COLOR-TEXT-MUTED:     #666666; /* captions, placeholders, secondary info */
