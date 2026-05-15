@@ -9,8 +9,8 @@ function loadNavbar() {
 
       <ul class="nav-links">
         <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="map.html">MAP</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="./pages/map.html">MAP</a></li>
+        <li><a href="./pages/about.html">ABOUT US</a></li>
       </ul>
 
       <div class="auth-buttons">
