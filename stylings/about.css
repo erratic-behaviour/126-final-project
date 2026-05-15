@@ -1,0 +1,30 @@
+/* about.css */
+
+@import "./const-vars.css";
+
+#about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-section {
+    background-color: var(--COLOR-TEXT-MUTED);
+}
+
+#primary-about-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#section-team {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    background: wheat;
+}

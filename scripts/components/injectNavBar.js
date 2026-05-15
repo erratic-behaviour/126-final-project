@@ -2,10 +2,11 @@
 
 export async function loadNavbar() {
     const navbar = `
+        <img alt="logo here">
         <ul id="main-nav-list">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/map.html">Map</a></li>
-            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/map.html">Map</a></li>
+            <li><a href="../pages/about.html">About</a></li>
         </ul>
     `;
 

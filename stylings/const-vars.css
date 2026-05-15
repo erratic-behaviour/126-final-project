@@ -6,10 +6,10 @@
 :root {
 
     /*+--- COLORS ---------------------------------------------+*/
-    --COLOR-MAIN-BACKGROUND: #d9d9d9
+    --COLOR-MAIN-BACKGROUND: #FFF3E2;
     --COLOR-PRIMARY:    #ece8e5;     /* main color of the website */
-    --COLOR-SECONDARY:  #00a099;   /* secondary main color */
-    --COLOR-ACCENTS:    #d9534f;     /* for links and hover color */
+    --COLOR-SECONDARY:  #B5D43B;   /* secondary main color */
+    --COLOR-ACCENTS:    #B5D43B;     /* for links and hover color */
 
 
     /* texts */
@@ -17,7 +17,7 @@
 
     --COLOR-TEXT-HEADERS:   #1a1a1a;
     --COLOR-TEXT-BODY:      #333333;
-    --COLOR-TEXT-MUTED:     #666666; /* captions, placeholders, secondary info */
+    --COLOR-TEXT-MUTED:     #43463B; /* captions, placeholders, secondary info */
     --COLOR-TEXT-INVERSE:   #ffffff; /* text on dark/colored background */
 
 

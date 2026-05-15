@@ -15,4 +15,24 @@
 
 #main-nav-list a {
     text-decoration: none;
+    color: var(--COLOR-TEXT-MUTED);
+}
+
+#main-nav-list a:hover {
+    text-decoration: none;
+    color: var(--COLOR-ACCENTS);
+    border-bottom: 3px solid var(--COLOR-ACCENTS);
+}
+
+#main-nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#main-nav-bar a.active {
+    color: var(--COLOR-ACCENTS);
+    border-bottom: 3px solid var(--COLOR-ACCENTS);
+    font-weight: 700;
+
 }
