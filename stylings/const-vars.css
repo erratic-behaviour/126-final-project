@@ -62,4 +62,9 @@
     /*Box colorings*/
     --BUTTON-COLOR: #b2de77;
     --POP-UP-SLIDER: #8cad5f;
+
+
+    /* +--- PADDINGS -----------+ */
+    --PADDINGS-X: 8%;
+    --PADDINGS-Y: 5%;
 }

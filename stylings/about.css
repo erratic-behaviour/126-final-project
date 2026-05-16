@@ -6,25 +6,54 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    width: 100%;
 }
 
 .about-section {
     background-color: var(--COLOR-TEXT-MUTED);
+    width: 100%;
+    padding: clamp(20px, 5%, 50px) var(--PADDINGS-X);
+}
+
+#section-primary-about {
+    padding-left: var(--PADDINGS-X);
 }
 
 #primary-about-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#primary-about-container p {
+    flex: 1;
+}
+
+#primary-about-container img {
+    width: 25%;
+    max-width: 200px;
+    min-width: 120px;
+    height: auto;
 }
 
 #section-team {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .team-card {
     display: flex;
     flex-direction: column;
     background: wheat;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    flex: 1 1 calc(25% - 20px);
+    min-width: 220px;
 }
