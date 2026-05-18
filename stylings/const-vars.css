@@ -67,4 +67,60 @@
     /* +--- PADDINGS -----------+ */
     --PADDINGS-X: 8%;
     --PADDINGS-Y: 5%;
+
+    /*+--- SPACING ---------------------------------------------+*/
+    /* 4px base unit — every value is a multiple of 4 */
+    --SPACE-1:  0.25rem;  /*  4px */
+    --SPACE-2:  0.5rem;   /*  8px */
+    --SPACE-3:  0.75rem;  /* 12px */
+    --SPACE-4:  1rem;     /* 16px */
+    --SPACE-5:  1.25rem;  /* 20px */
+    --SPACE-6:  1.5rem;   /* 24px */  /* ← used in .sidebar padding */
+    --SPACE-8:  2rem;     /* 32px */
+    --SPACE-10: 2.5rem;   /* 40px */
+    --SPACE-12: 3rem;     /* 48px */
+    --SPACE-16: 4rem;     /* 64px */
+    --SPACE-20: 5rem;     /* 80px */
+    --SPACE-24: 6rem;     /* 96px */
+
+
+    /*+--- SHADOWS ---------------------------------------------+*/
+    --SHADOW-SM: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --SHADOW-MD: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --SHADOW-LG: 0 10px 24px rgba(0, 0, 0, 0.12);   /* ← used in .sidebar */
+    --SHADOW-XL: 0 20px 48px rgba(0, 0, 0, 0.16);
+
+
+    /*+--- TRANSITIONS ---------------------------------------------+*/
+    --TRANSITION-FAST:   150ms ease;
+    --TRANSITION-NORMAL: 250ms ease;   /* ← used in .sidebar transition */
+    --TRANSITION-SLOW:   400ms ease;
+
+
+    /*+--- Z-INDEX ---------------------------------------------+*/
+    /* named layers — prevents z-index conflicts between teammates */
+    --Z-BASE:    0;
+    --Z-RAISED:  10;    /* cards on hover */
+    --Z-STICKY:  100;   /* sticky navbar */
+    --Z-OVERLAY: 200;   /* ← used in .sidebar — sits above the map */
+    --Z-MODAL:   300;   /* modals, dialogs */
+    --Z-TOAST:   400;   /* notification toasts — always on top */
+
+
+    /*+--- BORDERS ---------------------------------------------+*/
+    --BORDER-WIDTH-SM: 1px;
+    --BORDER-WIDTH-MD: 2px;
+    --BORDER-WIDTH-LG: 4px;
+
+    --BORDER-RADIUS-SM:   0.25rem;  /*  4px — small tags, badges */
+    --BORDER-RADIUS-MD:   0.5rem;   /*  8px — buttons, inputs */
+    --BORDER-RADIUS-LG:   1rem;     /* 16px — cards */
+    --BORDER-RADIUS-FULL: 9999px;   /* pill shapes, avatars */
+
+
+    /*+--- LAYOUT ---------------------------------------------+*/
+    --MAX-WIDTH-CONTENT: 75rem;   /* 1200px — main content container */
+    --MAX-WIDTH-PROSE:   65ch;    /* optimal reading line length */
+    --MAX-WIDTH-NARROW:  40rem;   /* modals, forms */
+    --NAVBAR-HEIGHT:     4rem;    /* used for sticky offset calculations */
 }

@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // condition to ensure loadMap function only loads inside map.html
 if ( window.location.pathname.includes("map.html") ) {
     import("./components/map.js").then(module => module.default());
+    import("./components/sidebar.js");
 }

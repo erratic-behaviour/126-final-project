@@ -1,3 +1,5 @@
+<!-- FILENAME: map.html -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +10,10 @@
 
 
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        
+        <link rel="stylesheet" href="../stylings/main.css"/>
         <link rel="stylesheet" href="../stylings/map.css"/>
+
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         
         <title>EatsKolar—Map</title>
@@ -19,9 +24,23 @@
                 <!-- nav bar is injected via JS -->
             </nav>
         </header>
+
         <main>
             <div id="map"></div>
+
+            <!-- SIDEBAR MODAL -->
+            <aside id="sidebar-place" class="sidebar sidebar--closed">
+                <button id="sidebar-button-close">✕</button>
+
+                <div id="sidebar-content">
+                    <h2 id="sidebar-placename">Place Name</h2>
+                    <p id="sidebar-placetype">Type</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore qui, iure ab reprehenderit eligendi minima commodi! Molestias, voluptatibus, deserunt hic possimus quisquam est error veniam quibusdam corporis maiores quos debitis.</p>
+                </div>
+            </aside>
         </main>
+
         <script src="../scripts/main.js" type="module"></script>
     </body>
 </html>

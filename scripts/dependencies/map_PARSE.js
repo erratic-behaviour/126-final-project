@@ -1,3 +1,5 @@
+// FILENAME: map_PARSE.js
+
 // to create marker HTML
 function createMarkerHTML(markerData) {
   const imageMap = {
@@ -28,6 +30,12 @@ export function addMarkersToMap(map, markersData) {
         html: createMarkerHTML(markerData),
       }),
     }).addTo(map);
+
+
+    // toggle sidebar onclick
+    marker.on("click", function () {
+      openSidebar(markerData);
+    });
   });
 }
 

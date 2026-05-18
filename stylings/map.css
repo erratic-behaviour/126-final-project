@@ -1,6 +1,7 @@
 /* FILENAME: map */
 
 @import "./const-vars.css";
+@import "./map-sidebar.css";
 
 body {
     overflow: hidden;

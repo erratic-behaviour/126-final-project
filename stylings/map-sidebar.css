@@ -1,0 +1,20 @@
+/* FILENAME: map-sidebar.css */
+
+.sidebar {
+    position: absolute;
+    top: var(--NAVBAR-HEIGHT);
+    left: 0;
+    width: 340px;
+    height: 100%;
+    background: white;
+    z-index: var(--Z-OVERLAY);
+    transform: translateX(0);
+    transition: transform var(--TRANSITION-NORMAL);
+    padding: var(--SPACE-6);
+    box-shadow: var(--SHADOW-LG);
+}
+
+
+.sidebar--closed {
+    transform: translateX(-100%);
+}
